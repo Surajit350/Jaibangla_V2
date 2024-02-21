@@ -108,7 +108,7 @@
     const navigation = document.querySelector(".navigation");
     if (window.scrollY > 0)
         navigation.classList.add("bg-white");
-    else 
+    else
         navigation.classList.remove("bg-white");
 });
         function refreshCaptcha() {
