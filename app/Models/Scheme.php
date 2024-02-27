@@ -9,4 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Scheme extends Model
 {
     use HasFactory,HasUlids;
+    protected $table = 'm_schemes'; // Custom table name
+    protected $primaryKey = 'id'; // Custom primary key
+    public $timestamps = false; 
 }

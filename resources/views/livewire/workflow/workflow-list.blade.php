@@ -1,5 +1,4 @@
 
-
     <div class="flex flex-col gap-2">
         <div class="flex px-4 py-2.5 bg-gray-700 border rounded shadow">
             <div class="flex-1 grid grid-rows-1 md:grid-cols-4 gap-4 text-sm font-semibold text-gray-50">
@@ -7,7 +6,7 @@
                     Workflow Details
                 </div>
                 <div class="hidden sm:flex items-center">
-                  Step  Name
+                  Step  Name 
                 </div>
                 <div class="hidden sm:flex items-center">
                     Parent 

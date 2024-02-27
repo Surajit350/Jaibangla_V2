@@ -39,7 +39,8 @@ Route::middleware('auth')->group(function () {
         'municipalities'                    =>  App\Http\Controllers\MunicipalityController::class,
         'police-stations'                   =>  App\Http\Controllers\PoliceStationController::class,
         'workflows'                         =>  App\Http\Controllers\WorkflowController::class,
-        'offices'                         =>  App\Http\Controllers\WorkflowController::class,
+        'offices'                           =>  App\Http\Controllers\WorkflowController::class,
+        'beneficiary_workflow'              =>  App\Http\Controllers\BeneficiaryWorkflowController::class,
 
     ]);
     Route::get('permissions', [App\Http\Controllers\PermissionController::class, 'index'])->name('permissions.index');

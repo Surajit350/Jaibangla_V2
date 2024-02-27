@@ -68,7 +68,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '5433'),
-            'database' => env('DB_DATABASE', 'Jaibangla_v2'),
+            'database' => env('DB_DATABASE', 'Jaibangla_V2'),
             'username' => env('DB_USERNAME', 'postgres'),
             'password' => env('DB_PASSWORD', 'nic@123'),
             'charset' => 'utf8',
