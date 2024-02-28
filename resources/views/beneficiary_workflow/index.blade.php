@@ -10,16 +10,10 @@
             <div class="flex flex-col md:flex-row w-full mt-1">
                     <div class="w-full md:w-1/2 mt-1 text-gray-700">
                         <div class="mt-1 relative rounded-md">
-                            <x-form.select required name="scheme" onchange="Livewire.emit('schemeSelected', this.value)" class="rounded-md w-full border-gray-500 text-gray-500 sm:text-sm">
-                                <option value="">Please Select Scheme...</option>
-                                @foreach ($schemes as $scheme)
-                                <option value="{{ $scheme->id }}">{{$scheme->name}}</option>
-                            @endforeach
-                            </x-form.select>
+                            @livewire('scheme-selection.schemes')
                         </div>
                     </div>
             </div>
         </div>
     </div>
-    @livewire('beneficiary-workflow.workflow')
 </x-app-layout>

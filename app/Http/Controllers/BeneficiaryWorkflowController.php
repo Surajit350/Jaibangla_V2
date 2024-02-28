@@ -19,4 +19,7 @@ class BeneficiaryWorkflowController extends Controller
         return view('beneficiary_workflow.index',
     ['schemes'=>$schemes]);
     }
+    public function list($scheme_id){
+        return view('beneficiary_workflow.listing');
+    }
 }

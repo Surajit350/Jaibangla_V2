@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\EnsureInvitationIsValid;
+use App\Http\Controllers\BeneficiaryWorkflowController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,6 @@ Route::middleware('auth')->group(function () {
         'police-stations'                   =>  App\Http\Controllers\PoliceStationController::class,
         'workflows'                         =>  App\Http\Controllers\WorkflowController::class,
         'offices'                           =>  App\Http\Controllers\WorkflowController::class,
-        'beneficiary_workflow'              =>  App\Http\Controllers\BeneficiaryWorkflowController::class,
 
     ]);
     Route::get('permissions', [App\Http\Controllers\PermissionController::class, 'index'])->name('permissions.index');
@@ -53,5 +53,8 @@ Route::get(
 
 Route::get('invitations', [App\Http\Controllers\InvitationController::class, 'index'])->name('invitations.index');
 Route::post('invitations', [App\Http\Controllers\InvitationController::class, 'store'])->name('invitations.store');
+//workflow
+Route::get('beneficiary_workflow',[App\Http\Controllers\BeneficiaryWorkflowController::class,'index'])->name('beneficiary_workflow.index');
+Route::get('beneficiaryDetails/{scheme_id}',[App\Http\Controllers\BeneficiaryWorkflowController::class,'list'])->name('beneficiaryDetails.list');
 
 require __DIR__ . '/auth.php';
