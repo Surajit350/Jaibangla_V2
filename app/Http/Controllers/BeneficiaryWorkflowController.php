@@ -20,6 +20,6 @@ class BeneficiaryWorkflowController extends Controller
     ['schemes'=>$schemes]);
     }
     public function list($scheme_id){
-        return view('beneficiary_workflow.listing');
+        return view('beneficiary_workflow.listing',['scheme_id' => $scheme_id]);
     }
 }
